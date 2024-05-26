@@ -1,9 +1,10 @@
 import { Canvas } from '@react-three/fiber';
 import styles from './game-world.module.scss';
-import { Sky } from '@react-three/drei';
+import { Sky, Stats } from '@react-three/drei';
 import { WorldGround } from './world-ground';
 import { WorldLight } from './world-light';
 import { Player } from './player';
+import { Physics } from './physics';
 
 const Skybox = () => {
   return (
@@ -23,7 +24,9 @@ const GameWorldComponent = () => {
         <Player />
         <WorldLight />
         <WorldGround />
+        <Physics />
         <Skybox />
+        <Stats />
       </Canvas>
     </div>
   );

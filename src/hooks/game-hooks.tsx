@@ -1,5 +1,6 @@
 import { useFrame, useThree } from '@react-three/fiber';
-import { ActiveControls, PlayerControls } from 'components/game-world/player';
+import { ActiveControls, PlayerControls } from 'components';
+
 import { useEffect, useState } from 'react';
 
 const PLAYER_SPEED = 1;
